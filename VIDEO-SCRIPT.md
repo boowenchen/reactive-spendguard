@@ -1,0 +1,13 @@
+# Spendguard — demo video script (as recorded, 2:06)
+
+Narration is English text-to-speech with burned-in captions. Every on-chain shot is a live explorer page (Blockscout / Reactscan) for a real testnet transaction listed in README.md; cards and stills are rendered from the repository's own evidence, test output and the live status page. No simulated activity is shown as a transaction.
+
+| Time | Shot | Narration |
+|---|---|---|
+| 0:00–0:20 | Spendguard · architecture | “An AI agent that pays for things needs a hot key, and a hot key can be stolen. Spendguard puts a small neural network inside a Reactive contract. It scores every spend the agent makes, and when the pattern stops looking like the agent, it freezes the wallet. No server, no human in the loop.” |
+| 0:20–0:46 | Features, model and results | “Nine integer features describe each spend: its size against the balance, timing, bursts, and how much is going to new recipients. A nine, twelve, one network with one hundred thirty three integer weights scores them. On synthetic data it catches more attacks than the best single rule at the same false-freeze rate. The data is synthetic, so this shows the mechanism, not real-world accuracy.” |
+| 0:46–1:00 | Base Sepolia · agent spend / Lasna · the network scores the spend | “Live on testnet: the agent pays a regular vendor on Base Sepolia. The Reactive contract on Lasna runs the network on that spend and logs a low score. Every inference is a public transaction.” |
+| 1:00–1:16 | Live scores for every spend / Lasna · flagged spend, freeze requested | “Six normal payments, all scored well below the threshold. Then the key is compromised: two near-cap payments to a brand new address, seconds apart. The second one crosses the threshold, and the contract requests a freeze.” |
+| 1:16–1:30 | Base Sepolia · freeze callback | “The authenticated callback freezes the wallet on Base. The callback can only freeze; it can never move funds. The attacker's next spend is refused, and only the owner's cold key can unfreeze or withdraw.” |
+| 1:30–1:52 | Tests, review regressions and parity checks | “Because the freeze comes after a spend, the wallet also enforces a hard window: at most three times the cap per hour, so a same-block drain stops early. And if the wallet ever owes callback fees, it stops spending rather than run unguarded. A pre-deployment review found both gaps; the counterexamples are now tests.” |
+| 1:52–2:06 | README · github.com/boowenchen/reactive-spendguard | “Spendguard is a testnet mechanism trained on synthetic data, and it does not catch a patient attacker who mimics the agent. The model, the training code, the replay checker and every transaction are public.” |
