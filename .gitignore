@@ -1,0 +1,12 @@
+lib/
+out/
+cache/
+broadcast/
+.toolchain/
+.env
+.env.*
+!.env.example
+config/deployed.json
+model/.venv/
+model/data/
+__pycache__/

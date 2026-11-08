@@ -1,0 +1,14 @@
+{
+  "base": {
+    "chainId": 84532,
+    "rpc": "https://sepolia.base.org",
+    "callbackProxy": "0x476F44b11F5C942c58f4c8E3d0300E5710743585",
+    "explorer": "https://sepolia.basescan.org"
+  },
+  "lasna": {
+    "chainId": 5318007,
+    "rpc": "https://lasna-rpc.rnk.dev/",
+    "systemContract": "0x8888888888888888888888888888888888888888",
+    "explorer": "https://lasna.reactscan.net"
+  }
+}

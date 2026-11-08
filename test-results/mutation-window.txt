@@ -1,0 +1,4 @@
+[FAIL: next call did not revert as expected] test_H1_WindowCountAndReset() (gas: 573757)
+[FAIL: next call did not revert as expected] test_H1_WindowLimitBoundsSameBlockDrain() (gas: 390653)
+[FAIL: next call did not revert as expected] test_H1_WindowCountAndReset() (gas: 573757)
+[FAIL: next call did not revert as expected] test_H1_WindowLimitBoundsSameBlockDrain() (gas: 390653)

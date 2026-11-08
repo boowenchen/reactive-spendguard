@@ -1,0 +1,10 @@
+{
+  "reactive-lib": [
+    "Reactive-Network/reactive-lib-omni",
+    "3ade0dcf1d27e67e5783ef807e73a1b9e0c0cce8"
+  ],
+  "forge-std": [
+    "foundry-rs/forge-std",
+    "dc647cc030d9d65910d8f1172a0cde48d7106e32"
+  ]
+}

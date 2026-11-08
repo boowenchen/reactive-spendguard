@@ -1,0 +1,10 @@
+# Live replay, run 2 (wallet 0x226b899f4fbf12ea2d57163da1bb690881fd8083, reactive 0x06ce8b6dc967b39e3f654c2c49a3167f75bdeea3)
+nonce  epoch  score  flagged  features  [on-chain check]
+    1      0   -651  False    [128, 272, 256, 16, 16, 0, 256, 16, 0]  match
+    2      0   -370  False    [136, 120, 346, 30, 40, 0, 471, 38, 9]  match
+    3      0   -329  False    [125, 122, 362, 24, 52, 137, 644, 46, -5]  match
+    4      0   -382  False    [132, 116, 405, 30, 70, 0, 813, 60, 5]  match
+    5      0   -334  False    [141, 125, 363, 37, 95, 147, 655, 49, 11]  match
+    6      0   -429  False    [130, 119, 390, 32, 109, 158, 556, 42, 0]  match
+    7      0    294  False    [201, 116, 417, 419, 510, 0, 737, 442, 69]  match
+    8      0    564  True     [204, 68, 640, 845, 967, 69, 982, 895, 42]  match

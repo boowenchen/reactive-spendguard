@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+test = "test"
+script = "script"
+solc_version = "0.8.30"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+remappings = ["@reactive/=lib/reactive-lib/", "forge-std/=lib/forge-std/src/"]
+fs_permissions = [{ access = "read", path = "./config" }, { access = "read", path = "./test" }]
+[profile.default.fuzz]
+runs = 256
+[profile.default.invariant]
+runs = 128
+depth = 64
+fail_on_revert = true

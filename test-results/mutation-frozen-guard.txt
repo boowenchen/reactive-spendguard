@@ -1,0 +1,49 @@
+Compiling 1 files with Solc 0.8.30
+Solc 0.8.30 finished in 320.23ms
+Compiler run successful!
+
+Ran 1 test for test/Spendguard.t.sol:SpendguardInvariantTest
+[FAIL: assertion failed: 1 != 0] invariant_FrozenWalletCannotSpend
+	[Sequence] (original: 29, shrunk: 2)
+		sender=0xE0994E962D1EeeFD8Da919e4a14A5586a955B0c5 addr=[test/Spendguard.t.sol:WalletHandler]0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f calldata=freezeCallback(uint8,int256) args=[1, 63710846244278310900311853582621504711264485319963065557392779 [6.371e61]]
+		sender=0xc280cADb56AE2350967d4F6ac9FbC25D0931D6dF addr=[test/Spendguard.t.sol:WalletHandler]0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f calldata=spend(uint256,uint8) args=[5464, 128]
+
+SpendguardInvariantTest invariants: 1/3 invariants broken
+[PASS] invariant_BalanceConservation
+[PASS] invariant_CallbacksNeverMoveFunds
+[FAIL: assertion failed: 1 != 0] invariant_FrozenWalletCannotSpend
+ SpendguardInvariantTest invariants (runs: 128, calls: 8192, reverts: 0)
+
+╭---------------+----------------+-------+---------+----------╮
+| Contract      | Selector       | Calls | Reverts | Discards |
++=============================================================+
+| WalletHandler | freezeCallback | 2696  | 0       | 0        |
+|---------------+----------------+-------+---------+----------|
+| WalletHandler | spend          | 2708  | 0       | 0        |
+|---------------+----------------+-------+---------+----------|
+| WalletHandler | unfreeze       | 2788  | 0       | 0        |
+╰---------------+----------------+-------+---------+----------╯
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 1.25s (1.25s CPU time)
+
+Ran 1 test suite in 1.25s (1.25s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/Spendguard.t.sol:SpendguardInvariantTest
+[FAIL: assertion failed: 1 != 0] invariant_FrozenWalletCannotSpend
+	[Sequence] (original: 29, shrunk: 2)
+		sender=0xE0994E962D1EeeFD8Da919e4a14A5586a955B0c5 addr=[test/Spendguard.t.sol:WalletHandler]0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f calldata=freezeCallback(uint8,int256) args=[1, 63710846244278310900311853582621504711264485319963065557392779 [6.371e61]]
+		sender=0xc280cADb56AE2350967d4F6ac9FbC25D0931D6dF addr=[test/Spendguard.t.sol:WalletHandler]0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f calldata=spend(uint256,uint8) args=[5464, 128]
+
+SpendguardInvariantTest invariants: 1/3 invariants broken
+[PASS] invariant_BalanceConservation
+[PASS] invariant_CallbacksNeverMoveFunds
+[FAIL: assertion failed: 1 != 0] invariant_FrozenWalletCannotSpend
+ SpendguardInvariantTest invariants (runs: 128, calls: 8192, reverts: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+
+Fuzz seed: 0x409a9f0aa167a86942ae9148c0cff4cd77773898a81a53c23690411e599e8e74 (use `--fuzz-seed` to reproduce)
+{"timestamp":1794151156,"event":"failure","invariant":"invariant_FrozenWalletCannotSpend","target":"test/Spendguard.t.sol:SpendguardInvariantTest","reason":"assertion failed: 1 != 0"}

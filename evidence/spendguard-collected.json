@@ -1,0 +1,218 @@
+{
+  "wallet": "0x226b899f4fbf12ea2d57163da1bb690881fd8083",
+  "reactive": "0x06ce8b6dc967b39e3f654c2c49a3167f75bdeea3",
+  "spends": [
+    {
+      "nonce": 1,
+      "to": "0x000000000000000000000000000000000000a11a",
+      "amount": 4.0,
+      "balanceBefore": 1000.0,
+      "eventTime": 1794153743,
+      "epoch": 0,
+      "tx": "0xe7d9f6276b1caa503552ccdc842b49152e5765822e41e8e3bab6be8605929c9c",
+      "block": 56159371,
+      "score": -651,
+      "features": [
+        128,
+        272,
+        256,
+        16,
+        16,
+        0,
+        256,
+        16,
+        0
+      ],
+      "flagged": false,
+      "reactiveTx": "0x9a2cf4a4a546b53c4807307d586b760bbc406a1cfdc59af5c13726a78ecbec0f",
+      "reactiveTime": 1794153742
+    },
+    {
+      "nonce": 2,
+      "to": "0x000000000000000000000000000000000000b22b",
+      "amount": 6.0,
+      "balanceBefore": 996.0,
+      "eventTime": 1794153936,
+      "epoch": 0,
+      "tx": "0x69efaabc66019a74e5b038419dd21766eae6c178e23c40eea762e66112c24302",
+      "block": 56160340,
+      "score": -370,
+      "features": [
+        136,
+        120,
+        346,
+        30,
+        40,
+        0,
+        471,
+        38,
+        9
+      ],
+      "flagged": false,
+      "reactiveTx": "0x3ecb52d485426e186f4fc23f9f8290ce8757de344e6908f8537e06d11e5bc733",
+      "reactiveTime": 1794153936
+    },
+    {
+      "nonce": 3,
+      "to": "0x000000000000000000000000000000000000a11a",
+      "amount": 3.5,
+      "balanceBefore": 990.0,
+      "eventTime": 1794154150,
+      "epoch": 0,
+      "tx": "0xbf5734abf78d72ecb366d80b4416656006ad5bd384b3a7e698d4261806a0e14f",
+      "block": 56161409,
+      "score": -329,
+      "features": [
+        125,
+        122,
+        362,
+        24,
+        52,
+        137,
+        644,
+        46,
+        -5
+      ],
+      "flagged": false,
+      "reactiveTx": "0xb575eb391565cb3987d4eb81d0ed900628cc2a0f90d2df7356aba7528618076a",
+      "reactiveTime": 1794154150
+    },
+    {
+      "nonce": 4,
+      "to": "0x000000000000000000000000000000000000c33c",
+      "amount": 5.0,
+      "balanceBefore": 986.5,
+      "eventTime": 1794154313,
+      "epoch": 0,
+      "tx": "0x26f71873a334462ec99f54f06fedab6ad1bb0e79a5b470a41538a8d112a5b402",
+      "block": 56162225,
+      "score": -382,
+      "features": [
+        132,
+        116,
+        405,
+        30,
+        70,
+        0,
+        813,
+        60,
+        5
+      ],
+      "flagged": false,
+      "reactiveTx": "0xac157bcb5bef90e283efcbf5c80457bb72a5a951907dc154eb4fd7a5022ecb33",
+      "reactiveTime": 1794154313
+    },
+    {
+      "nonce": 5,
+      "to": "0x000000000000000000000000000000000000b22b",
+      "amount": 7.0,
+      "balanceBefore": 981.5,
+      "eventTime": 1794154547,
+      "epoch": 0,
+      "tx": "0xed513f75456f039c1b578fe9349c412cacb030597a2b46528a515b5fb7e89c96",
+      "block": 56163393,
+      "score": -334,
+      "features": [
+        141,
+        125,
+        363,
+        37,
+        95,
+        147,
+        655,
+        49,
+        11
+      ],
+      "flagged": false,
+      "reactiveTx": "0x1780819903addf1a394b092930269c0c876c1b7bf25492166eeed38709a182d6",
+      "reactiveTime": 1794154547
+    },
+    {
+      "nonce": 6,
+      "to": "0x000000000000000000000000000000000000a11a",
+      "amount": 4.5,
+      "balanceBefore": 974.5,
+      "eventTime": 1794154730,
+      "epoch": 0,
+      "tx": "0x431f5186bacda5ac68db93dcbe328cd8d1f71ab9adabed07dead9b8e3e8fd668",
+      "block": 56164307,
+      "score": -429,
+      "features": [
+        130,
+        119,
+        390,
+        32,
+        109,
+        158,
+        556,
+        42,
+        0
+      ],
+      "flagged": false,
+      "reactiveTx": "0x5dc813af2b9667c6a66c4bd20c5d8d59ab30dfee73f97a94c41c9d259535862b",
+      "reactiveTime": 1794154729
+    },
+    {
+      "nonce": 7,
+      "to": "0x000000000000000000000000000000000000dead",
+      "amount": 96.0,
+      "balanceBefore": 970.0,
+      "eventTime": 1794154893,
+      "epoch": 0,
+      "tx": "0x17f74db9530168f82cc1cc656b1595821721a0053dda3370640904a952dfacac",
+      "block": 56165122,
+      "score": 294,
+      "features": [
+        201,
+        116,
+        417,
+        419,
+        510,
+        0,
+        737,
+        442,
+        69
+      ],
+      "flagged": false,
+      "reactiveTx": "0x3d81c966bf00d8ae884bc83936362645d34a710ed39ba8b43084de8ff398998c",
+      "reactiveTime": 1794154892
+    },
+    {
+      "nonce": 8,
+      "to": "0x000000000000000000000000000000000000dead",
+      "amount": 98.0,
+      "balanceBefore": 874.0,
+      "eventTime": 1794154912,
+      "epoch": 0,
+      "tx": "0xf22e48b5914de83773995bbce2342990cd1d680d5c3d5cf1bc3606778eff4e98",
+      "block": 56165218,
+      "score": 564,
+      "features": [
+        204,
+        68,
+        640,
+        845,
+        967,
+        69,
+        982,
+        895,
+        42
+      ],
+      "flagged": true,
+      "reactiveTx": "0x1b45696193093a5728b3bcd22ba1ca8a4fab7fbcf6542a372b5b987d36e75870",
+      "reactiveTime": 1794154912,
+      "freezeRequests": [
+        "0x1b45696193093a5728b3bcd22ba1ca8a4fab7fbcf6542a372b5b987d36e75870"
+      ]
+    }
+  ],
+  "frozen": [
+    {
+      "nonce": 8,
+      "score": 564,
+      "tx": "0x9329b2c8b85f4f394b46287b2916dcd7582ee6610f2b812e93a08412c89c6108",
+      "block": 56165228,
+      "time": 1794154914
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+Compiling 8 files with Solc 0.8.30
+Solc 0.8.30 finished in 16.06s
+Compiler run successful!
+
+Ran 1 test for test/Deploy.t.sol:DeployScriptTest
+[PASS] test_AllStagesWireTogetherAndGuardsHold() (gas: 46136875)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 13.39ms (11.76ms CPU time)
+
+Ran 17 tests for test/Spendguard.t.sol:SpendguardTest
+[PASS] testFuzz_UnauthorizedCallerCannotFreeze(address,address) (runs: 256, μ: 34989, ~: 35042)
+[PASS] test_CallbackFeesCannotTouchTokenPrincipal() (gas: 43863)
+[PASS] test_CapAndAgentEnforced() (gas: 230400)
+[PASS] test_DemoFreezesAtExpectedSpendThenBlocksSpending() (gas: 8110474)
+[PASS] test_LateSpendFromOldEpochIsIgnored() (gas: 175175)
+[PASS] test_ModelParityWithPythonVectors() (gas: 11212261)
+[PASS] test_NormalSequencesNeverRequestFreeze() (gas: 18530708)
+[PASS] test_OnlyProxyCarryingThisReactiveCanFreeze() (gas: 121785)
+[PASS] test_ReactGas() (gas: 7066506)
+Logs:
+  react() gas, demo spend 0 - 175453
+  react() gas, demo spend 1 - 126849
+  react() gas, demo spend 2 - 107397
+  react() gas, demo spend 3 - 126853
+  react() gas, demo spend 4 - 107177
+  react() gas, demo spend 5 - 107570
+  react() gas, demo spend 6 - 126586
+  react() gas, demo spend 7 flagged 127866
+  react() gas, demo spend 8 flagged 104183
+  react() gas, demo spend 9 flagged 104177
+  react() gas, demo spend 10 flagged 104178
+  react() max gas 175453
+
+[PASS] test_ReactOnlySystemAndWrongOriginIgnored() (gas: 129320)
+[PASS] test_ReplayedLogIsNoop() (gas: 281432)
+[PASS] test_RetryWhenWalletKeepsSpendingAfterRequest() (gas: 1777344)
+[PASS] test_SequenceParityFeaturesScoresAndFirstFreeze() (gas: 45924428)
+[PASS] test_SpendLogWithNewerEpochResetsStateEvenWithoutUnfrozenLog() (gas: 920547)
+[PASS] test_SpendRevertsWhileFrozenOwnerCanStillWithdraw() (gas: 1447849)
+[PASS] test_SubscriptionsOnLink() (gas: 18056)
+[PASS] test_UnfreezeAdvancesEpochAndStaleCallbackIsIgnored() (gas: 2117303)
+Suite result: ok. 17 passed; 0 failed; 0 skipped; finished in 257.25ms (460.78ms CPU time)
+
+Ran 9 tests for test/Review.t.sol:ReviewTest
+[PASS] testFuzz_ReactNoRevertRealisticRanges(uint256[3],uint256[3],uint64[3]) (runs: 256, μ: 648337, ~: 658249)
+[PASS] test_H1_WindowCountAndReset() (gas: 649978)
+[PASS] test_H1_WindowLimitBoundsSameBlockDrain() (gas: 377368)
+[PASS] test_H2_FundedWalletSpendsNormally() (gas: 507158)
+[PASS] test_H2_WalletInDebtStopsSpending() (gas: 855526)
+[PASS] test_I1_ExtremeInputs() (gas: 808479)
+[PASS] test_L1_DemoAttackRecipientIsLearnedFromUnflaggedSpend() (gas: 1523134)
+[PASS] test_L2_SameNonceScoredTwiceUnderDifferentTxHash() (gas: 338111)
+[PASS] test_L3_SlowDustSpendsAreScoredWithoutFreeze() (gas: 5526490)
+Logs:
+  dust spends scored 45 freeze requests 0
+
+Suite result: ok. 9 passed; 0 failed; 0 skipped; finished in 257.40ms (135.94ms CPU time)
+
+Ran 1 test for test/Spendguard.t.sol:SpendguardInvariantTest
+[PASS]
+SpendguardInvariantTest invariants:
+[PASS] invariant_BalanceConservation
+[PASS] invariant_CallbacksNeverMoveFunds
+[PASS] invariant_FrozenWalletCannotSpend
+ SpendguardInvariantTest invariants (runs: 128, calls: 8192, reverts: 0)
+
+╭---------------+----------------+-------+---------+----------╮
+| Contract      | Selector       | Calls | Reverts | Discards |
++=============================================================+
+| WalletHandler | freezeCallback | 2711  | 0       | 0        |
+|---------------+----------------+-------+---------+----------|
+| WalletHandler | spend          | 2782  | 0       | 0        |
+|---------------+----------------+-------+---------+----------|
+| WalletHandler | unfreeze       | 2699  | 0       | 0        |
+╰---------------+----------------+-------+---------+----------╯
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 1.86s (1.86s CPU time)
+
+Ran 4 test suites in 1.87s (2.39s CPU time): 28 tests passed, 0 failed, 0 skipped (28 total tests)
